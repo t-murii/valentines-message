@@ -602,7 +602,7 @@
         const meowAudio = document.getElementById("meowmeowaudio");
         const shockedaudio = document.getElementById("shockedaudio");
 
-        if (moveCount > 35) {
+        if (moveCount > 25) {
           heading.textContent = "Ok that's enough young lady! 😠";
           const nonocataudio = document.getElementById("nonocat");
           nonocataudio.play();
@@ -613,7 +613,7 @@
             .getElementById("angrycatstanding")
             .classList.remove("hidden");
           document.getElementById("noBtnWrapper").classList.add("hidden");
-        } else if (moveCount > 30) {
+        } else if (moveCount > 20) {
           shockedaudio.play();
           if (meowAudio) meowAudio.pause();
           heading.textContent = "Now I'm mad! 😡👿";
@@ -621,10 +621,10 @@
             div.classList.add("hidden");
           });
           document.getElementById("angrycat2").classList.remove("hidden");
-        } else if (moveCount > 26) {
+        } else if (moveCount > 16) {
           //prevent audio from restarting
           heading.textContent = "I'm begging! 🥺🥺🥺";
-        } else if (moveCount > 25) {
+        } else if (moveCount > 15) {
           heading.textContent = "Ok Pretty please 🥺🥺🥺";
           meowAudio.currentTime = 0;
           meowAudio.play();
@@ -633,7 +633,7 @@
             div.classList.add("hidden");
           });
           document.getElementById("sadtinycat").classList.remove("hidden");
-        } else if (moveCount > 20) {
+        } else if (moveCount > 12) {
           shockedaudio.play();
           if (meowAudio) meowAudio.pause();
 
@@ -644,7 +644,7 @@
             div.classList.add("hidden");
           });
           document.getElementById("angrycat2").classList.remove("hidden");
-        } else if (moveCount > 15) {
+        } else if (moveCount > 9) {
           heading.textContent = "Don't make me sad 🥺😠";
 
           // Show angry cat, hide others
@@ -656,9 +656,9 @@
           meowAudio.play();
           const rizzAudio = document.getElementById("rizzaudio");
           if (rizzAudio) rizzAudio.pause();
-        } else if (moveCount > 12) {
+        } else if (moveCount > 6) {
           heading.textContent = "Ok seriously 🥺";
-        } else if (moveCount > 5) {
+        } else if (moveCount > 3) {
           heading.textContent = "Try harder 😈";
 
           // Show sad cat, hide others
